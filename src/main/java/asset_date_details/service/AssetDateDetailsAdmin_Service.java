@@ -18,7 +18,7 @@ import asset_date_details.model.repo.AssetDateDetailsAdmin_Repo;
 
 @Service("assetDateDetailsAdminServ")
 @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.READ_COMMITTED)
-public class AssetDateDetailAdmin_Service implements I_AssetDateDetailsAdmin_Service {
+public class AssetDateDetailsAdmin_Service implements I_AssetDateDetailsAdmin_Service {
 	// private static final Logger logger =
 	// LoggerFactory.getLogger(AssetDateDetailsService.class);
 
