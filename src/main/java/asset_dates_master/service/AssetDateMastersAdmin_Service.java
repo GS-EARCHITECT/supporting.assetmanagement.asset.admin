@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -14,6 +16,7 @@ import asset_dates_master.model.master.AssetDateMaster;
 import asset_dates_master.model.repo.AssetDateMastersAdmin_Repo;
 
 @Service("assetDateMastersAdminServ")
+@Scope(value = "prototype", proxyMode = ScopedProxyMode.TARGET_CLASS)
 @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.READ_COMMITTED)
 public class AssetDateMastersAdmin_Service implements I_AssetDateMastersAdmin_Service {
 	// private static final Logger logger =

@@ -8,6 +8,8 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -18,6 +20,7 @@ import asset_users_details.model.master.AssetUsersDetailPK;
 import asset_users_details.model.repo.AssetUsersDetailsAdmin_Repo;
 
 @Service("assetUsersDetailsAdminServ")
+@Scope(value = "prototype", proxyMode = ScopedProxyMode.TARGET_CLASS)
 @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.READ_COMMITTED)
 public class AssetUsersDetailsAdmin_Service implements I_AssetUsersDetailsAdmin_Service 
 {
