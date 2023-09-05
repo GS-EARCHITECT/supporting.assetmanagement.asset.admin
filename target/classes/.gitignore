@@ -1,9 +1,6 @@
 /asset_location_details/
-/asset_master/
-/asset_measures_details/
-/asset_meter_details/
-/asset_price_details/
 /asset_structure_details/
 /asset_users_details/
 /common/
 /main/
+/asset_resserv_party_details/
