@@ -8,8 +8,8 @@ import javax.persistence.*;
  * 
  */
 @Entity
-@Table(name = "ASSET_DATES_MASTER")
-public class AssetDatesMaster implements Serializable {
+@Table(name = "ASSET_DATE_MASTER")
+public class AssetDateMaster implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -21,7 +21,7 @@ public class AssetDatesMaster implements Serializable {
 	@Column(name = "DATE_TYPE")
 	private String dateType;
 
-	public AssetDatesMaster() {
+	public AssetDateMaster() {
 	}
 
 	public Long getDateSeqNo() {
@@ -57,7 +57,7 @@ public class AssetDatesMaster implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		AssetDatesMaster other = (AssetDatesMaster) obj;
+		AssetDateMaster other = (AssetDateMaster) obj;
 		if (dateSeqNo == null) {
 			if (other.dateSeqNo != null)
 				return false;
@@ -71,7 +71,7 @@ public class AssetDatesMaster implements Serializable {
 		return true;
 	}
 
-	public AssetDatesMaster(Long dateSeqNo, String dateType) {
+	public AssetDateMaster(Long dateSeqNo, String dateType) {
 		super();
 		this.dateSeqNo = dateSeqNo;
 		this.dateType = dateType;

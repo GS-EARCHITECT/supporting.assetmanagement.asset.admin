@@ -2,7 +2,7 @@ package asset_dates_master.model.dto;
 
 import java.io.Serializable;
 
-public class AssetDatesMaster_DTO implements Serializable {
+public class AssetDateMaster_DTO implements Serializable {
 
 	/**
 	 * 
@@ -27,13 +27,13 @@ public class AssetDatesMaster_DTO implements Serializable {
 		this.dateType = dateType;
 	}
 
-	public AssetDatesMaster_DTO(Long dateSeqNo, String dateType) {
+	public AssetDateMaster_DTO(Long dateSeqNo, String dateType) {
 		super();
 		this.dateSeqNo = dateSeqNo;
 		this.dateType = dateType;
 	}
 
-	public AssetDatesMaster_DTO() {
+	public AssetDateMaster_DTO() {
 		super();
 	}
 
