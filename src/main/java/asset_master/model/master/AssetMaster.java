@@ -33,6 +33,9 @@ public class AssetMaster implements Serializable {
 	@Column(name = "SPECIFICATION_SEQ_NO")
 	private Long specSeqNo;
 
+	@Column(name = "PARTY_SEQ_NO")
+	private Long partySeqNo;
+	
 	public Long getAssetSeqNo() {
 		return assetSeqNo;
 	}

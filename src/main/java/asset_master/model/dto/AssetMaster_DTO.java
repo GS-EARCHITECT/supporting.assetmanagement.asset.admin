@@ -2,6 +2,8 @@ package asset_master.model.dto;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+
 public class AssetMaster_DTO implements Serializable {
 
 	/**
@@ -14,7 +16,9 @@ public class AssetMaster_DTO implements Serializable {
 	private Long resourceSeqNo;
 	private Long specSeqNo;
 	private Character doneFlag;
-
+	private Long partySeqNo;
+	
+	
 	public Character getDoneFlag() {
 		return doneFlag;
 	}
@@ -67,15 +71,6 @@ public class AssetMaster_DTO implements Serializable {
 		super();
 	}
 
-	public AssetMaster_DTO(Long assetSeqNo, String asset, String assetId, Long resourceSeqNo, Long specSeqNo,
-			Character doneFlag) {
-		super();
-		this.assetSeqNo = assetSeqNo;
-		this.asset = asset;
-		this.assetId = assetId;
-		this.resourceSeqNo = resourceSeqNo;
-		this.specSeqNo = specSeqNo;
-		this.doneFlag = doneFlag;
-	}
 
+	
 }
